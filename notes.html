@@ -53,3 +53,41 @@
 
 <!-- hide content only for extra small screens, d-none hide for all above xs, d-sm-block show for all above s -->
 <p class="d-none d-sm-block"></p>
+
+<!-- nav tag of the html is used to specify the navigation information -->
+<!-- navbar declares it as a navigation bar -->
+<!-- navbar-dark class is uded to specify that the page should use the dark navigation bar -->
+<!-- navbar-expand-sm expand for scrn sizes on or above sm -->
+<!-- bg-primary use priamry bg color, if we wanto to change the nav bar bg color we have to remove this, then only changes will be applied -->
+<!-- fixed-top fit this nav to the top permanantly -->
+<nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top"></nav>
+
+<!-- brand name/logo for the website, branding the website-->
+<a class="navbar-brand" href="#"></a>
+
+<!-- navbar-nav is to specify that the items should be displayed inline inside the navigation bar -->
+<!-- mr-auto fit to left as much as possible, a js used class, more detail later  -->
+<ul class="navbar-nav mr-auto"></ul>
+
+<!-- specify a nav item, its active now -->
+<li class="nav-item active"></li>
+
+<!-- nav-link -->
+<a class="nav-link" href="#"></a>
+
+<!-- nav items to be replaced by a toggle button this code is used. so that the items can be toggled on or off when required on small and extra small screens -->
+<!-- data-toggle menu items are collapsed on small and xs screens when the toggle button is visible. -->
+<!-- data-target id of the nav bar item's div -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- To hide the items from the navigation bar for the small screens, we need to enclose the ul within another div  -->
+<div class="collapse navbar-collapse" id="Navbar"></div>
+
+<!-- To add breadcrumbs to our pages, we take the help of the breadcrumb and breadcrumb-item classes, to add a hierarchy to indicate where you are -->
+<ol class="col-12 breadcrumb">
+    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+    <li class="breadcrumb-item active">About Us</li>
+</ol>
+
