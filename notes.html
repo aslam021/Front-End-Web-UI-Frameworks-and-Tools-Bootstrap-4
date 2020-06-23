@@ -234,3 +234,43 @@
         </div>
     </div>
 </div>
+
+
+<!-- Adding a Tooltip -->
+<!-- data-toggle="tooltip" toggle as tooltip -->
+<!-- data-html="true" this tooltip contains html -->
+<a role="button" class="btn btn-block nav-link btn-warning"
+   data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+   data-placement="bottom" href="#reserveform">Reserve Table</a>
+
+<!-- js script to activate the tooltip -->
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+
+<!-- Adding a Modal (pop/overlay login screen)-->
+<!-- class="modal fade" use class modal and fade when display -->
+<!-- role="dialog" its a dialog role -->
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login </h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- add body here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- to display the modal -->
+<span class="navbar-text">
+    <a data-toggle="modal" data-target="#loginModal">
+    <span class="fa fa-sign-in"></span> Login</a>
+</span>
