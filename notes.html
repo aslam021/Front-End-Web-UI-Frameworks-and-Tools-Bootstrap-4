@@ -333,3 +333,20 @@
 </div>
 
 
+<!-- jQuery -->
+<!-- slideshow manuall controll -->
+<script>
+    // execute function when loading the page
+    $(document).ready(function(){
+        // run carousel (slideshow starts with intervel 2000) on the item has id mycarousel
+        $("#mycarousel").carousel( { interval: 2000 } );
+        // when carousel pause butto clkd exct this functn
+        $("#carousel-pause").click(function(){
+            $("#mycarousel").carousel('pause');
+        });
+        $("#carousel-play").click(function(){
+            $("#mycarousel").carousel('cycle');
+        });
+    });
+</script>
+
